@@ -1,7 +1,7 @@
 import pygame as pg
 import random
 
-
+# Constants
 WIDTH = 1000
 HEIGHT = 1000
 FPS = 60
@@ -19,7 +19,6 @@ screen = pg.display.set_mode((WIDTH, HEIGHT))
 pg.display.set_caption("pygame template")
 clock = pg.time.Clock()
 
-## Game loop
 running = True
 while running:
 
@@ -31,7 +30,6 @@ while running:
             if event.key == pg.K_ESCAPE:
                 running = False
 
-    #3 Draw/render
     screen.fill(BLACK)
 
     pg.display.flip()       
